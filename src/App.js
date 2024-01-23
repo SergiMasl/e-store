@@ -10,8 +10,8 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="log" element={<Layout />} />
-          <Route path="home" element={<Home />} />
+          <Route path="e-store/log" element={<Layout />} />
+          <Route path="e-store/home" element={<Home />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,40 @@
+
+@mixin nav
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: center
+    height: 52px
+    background-color: $grey-base
+
+@mixin container($bc, $jc)
+    width: 900px
+    max-width: 900px
+    display: flex
+    align-items: center
+    justify-content: $jc
+    background-color: $bc
+
+@mixin rowBlock($width,  $jc)
+    display: flex
+    align-items: center
+    width: $width
+    justify-content: $jc
+
+@mixin list
+    list-style: none
+
+//btms:
+@mixin genderBtms
+    padding: 16px
+    text-decoration: none
+    font-size: 20px
+
+@mixin hyperLinks
+    text-decoration: none
+
+//design
+@mixin line($height, $bc)
+    width: 5px
+    height: $height
+    background: $bc

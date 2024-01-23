@@ -1,0 +1,44 @@
+@import "../../styles/_varibles"
+@import "../../styles/_func.sass"
+
+.nav--container
+    @include nav
+    .container
+        @include container($grey-base, space-around)
+        .nav--gender-btm
+            .gender-link
+                @include genderBtms
+                color: $grey-text
+            .gender-link--focus
+                color: $black-text
+                background-color: $white-base
+
+        .nav-logo
+            a
+                font-family: $f-f--logo
+                size: 20px
+                text-decoration: none
+                font-weight: 900
+                color: $red-tetx
+
+        .nav--btm-wrap
+            .nav--btm-list
+                @include rowBlock(250px,  space-between)
+                .nav--btm
+                    @include list
+                    a
+                        @include hyperLinks
+                        padding: 16px
+                        display: flex
+                        align-items: center
+                        &:hover
+                            background-color: $white-base
+                            stroke-width: "100"
+                        svg
+                            height: 20px
+                            width: 20px
+                            fill: $black-text
+
+                        span
+                            margin-left: 5px
+                            font-size: 20px

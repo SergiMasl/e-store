@@ -14,10 +14,10 @@ function Navbar() {
     <nav className="nav--container">
       <div className="container">
         <div className="nav--gender-btm">
-          <Link className="gender-link gender-link--focus" to="/home">
+          <Link className="gender-link gender-link--focus" to="e-store/home">
             MEN
           </Link>
-          <Link className="gender-link" to="/home">
+          <Link className="gender-link" to="e-store/home">
             WOMEN
           </Link>
         </div>
@@ -27,7 +27,7 @@ function Navbar() {
         <div className="nav--btm-wrap">
           <ul className="nav--btm-list">
             <li className="nav--btm">
-              <Link to="/log">
+              <Link to="e-store/log">
                 <AiOutlineUser />
               </Link>
             </li>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { regestar, login } from "./request";
 
 function SingField({ sing }) {
   const [username, setUsername] = useState("");
@@ -17,9 +18,11 @@ function SingField({ sing }) {
     if (sing) {
       console.log("sing in process");
       console.log("Submitted:", { username, password });
+      login(username, password);
     } else {
       console.log("reg in process");
       console.log("Submitted:", { username, password });
+      regestar(username, password);
     }
   };
 
